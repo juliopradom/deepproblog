@@ -22,7 +22,7 @@ To obtain the preprocessed and scaled preliminary verions of the datasets, run t
 
 ### Downsampled Versions
 
-The downsampled datasets, including the shortened versions (10%, 1%) are generated using the following command inside the **examples/fraud/data/data_downsampler/downsampler.py**. This will output the files in the **examples/fraud/data/downsampled** folder. If you want to run only Experiment 1, you don't need to generate teh missing data versions.
+The downsampled datasets, including the shortened versions (10%, 1%) are generated using the following command inside the **examples/fraud/data/data_downsampler/downsampler.py**. This will output the files in the **examples/fraud/data/downsampled** folder. If you want to run only Experiment 1, you don't need to generate the missing data versions.
 
 ```
 python downsampler.py
