@@ -8,11 +8,48 @@
 
 # DeepProbLog - Fraud Detection
 
-This repository extends the original DeepProbLog framework with a customized fraud detection example as part of Julio Prado's thesis in the Master's of Information Studies, Data Science program at the University of Amsterdam. For a complete guide on DeepProbLog and installation, please refer to the documentation above.
+This repository extends the original DeepProbLog framework with a customized fraud detection example as part of Julio Prado's thesis in the Master's of Information Studies, Data Science program at the University of Amsterdam. For a complete guide on DeepProbLog and installation, please refer to the documentation below.
 
 ## Generate the Training and Test Dataset
 
-The dataset used for the research is the **[Credit Card Transactions Fraud Detection Dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection/data), a simulated credit card transaction dataset containing legitimate and fraud transactions from the duration 1st Jan 2019 - 31st Dec 2020. It covers credit cards of 1000 customers doing transactions with a pool of 800 merchants. This was generated using Sparkov Data Generation | Github tool created by Brandon Harris.
+The dataset used for the research is the [Credit Card Transactions Fraud Detection Dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection/data), a simulated credit card transaction dataset containing legitimate and fraud transactions from the duration 1st Jan 2019 - 31st Dec 2020. It covers credit cards of 1000 customers doing transactions with a pool of 800 merchants. This was generated using Sparkov Data Generation | Github tool created by Brandon Harris.
+
+The first step is to download the training and test csv files provided in the Kaggle dataset and place them in the **examples/fraud/data/archive** folder. The preprocessing and downsampling steps needed to generate the final training and datasets are enumerated next:
+
+### Preprocessed and Scaled Versions
+
+To obtain the preprocessed and scaled preliminary verions of the datasets, run the Jupyter Notebook included in **examples/fraud/data/eda/eda_and_preprocessing.ipynb** this will output the preprocessed and preprocessed and scaled datasets in the **examples/fraud/data/preprocessed** folder.
+
+### Downsampled Versions
+
+The downsampled datasets, including the shortened versions (10%, 1%) are generated using the following command inside the **examples/fraud/data/data_downsampler/downsampler.py**. This will output the files in the **examples/fraud/data/downsampled** folder. If you want to run only Experiment 1, you don't need to generate teh missing data versions.
+
+```
+python downsampler.py
+```
+
+### Missing Data Versions
+
+The missing data datasets, including the shortened versions (10%, 1%) are generated using the following command inside the **examples/fraud/data/missing_data_adder/add_missing_data.py**. This will output the files in the **examples/fraud/data/missing_data** folder.
+
+```
+python add_missing_data.py
+```
+
+## Run Experiments
+
+The models associated with the experiments can be found in folders **examples/fraud/support_models** (XGBoost, DNN,Decision Trees) and **examples/fraud/dpl_models** (DeepProbLog for Experiment 1 and 2). The models in **/support_models** can be run as they are, only by modifying the training and test datasets provided in the **main** function:
+
+```
+python decision_trees.py
+python dnn.py
+python xgboost_model.py
+```
+To run the DeepProbLog models,use the script **examples/fraud/runner/deepproblog_runner.py**:
+
+```
+python deepproblog_runner.py
+```
 
 # DeepProbLog
 [![Unit tests](https://github.com/ML-KULeuven/deepproblog/actions/workflows/python-app.yml/badge.svg)](https://github.com/ML-KULeuven/deepproblog/actions/workflows/python-app.yml)
