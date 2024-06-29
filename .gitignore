@@ -257,6 +257,10 @@ src/deepproblog/examples/Poker/data/cards/rendered/
 src/deepproblog/examples/Poker/data/images/
 src/deepproblog/examples/Smokers/data/
 src/deepproblog/examples/Successor/data/MNIST/
+src/deepproblog/examples/fraud/data/archive/
+src/deepproblog/examples/fraud/data/preprocessed/
+src/deepproblog/examples/fraud/data/downsampled/
+src/deepproblog/examples/fraud/data/missing_data/
 /venv/
 /build/
 /dist/
