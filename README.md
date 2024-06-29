@@ -2,11 +2,17 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-
 # Author
 
 [Julio Prado Muñoz](https://github.com/juliopradom)
 
+# DeepProbLog - Fraud Detection
+
+This repository extends the original DeepProbLog framework with a customized fraud detection example as part of Julio Prado's thesis in the Master's of Information Studies, Data Science program at the University of Amsterdam. For a complete guide on DeepProbLog and installation, please refer to the documentation above.
+
+## Generate the Training and Test Dataset
+
+The dataset used for the research is the **[Credit Card Transactions Fraud Detection Dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection/data), a simulated credit card transaction dataset containing legitimate and fraud transactions from the duration 1st Jan 2019 - 31st Dec 2020. It covers credit cards of 1000 customers doing transactions with a pool of 800 merchants. This was generated using Sparkov Data Generation | Github tool created by Brandon Harris.
 
 # DeepProbLog
 [![Unit tests](https://github.com/ML-KULeuven/deepproblog/actions/workflows/python-app.yml/badge.svg)](https://github.com/ML-KULeuven/deepproblog/actions/workflows/python-app.yml)
