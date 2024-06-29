@@ -1,4 +1,4 @@
-![modus_operandi_logo](https://user-images.githubusercontent.com/50462732/216829488-6fa2af61-f276-47ec-84c7-c098d66eb59d.jpeg)
+![uva_logo](https://github.com/juliopradom/deepproblog/blob/master/src/deepproblog/examples/fraud/university-of-amsterdam.png)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
