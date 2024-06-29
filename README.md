@@ -1,3 +1,13 @@
+![modus_operandi_logo](https://user-images.githubusercontent.com/50462732/216829488-6fa2af61-f276-47ec-84c7-c098d66eb59d.jpeg)
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
+# Author
+
+[Julio Prado Muñoz](https://github.com/juliopradom)
+
+
 # DeepProbLog
 [![Unit tests](https://github.com/ML-KULeuven/deepproblog/actions/workflows/python-app.yml/badge.svg)](https://github.com/ML-KULeuven/deepproblog/actions/workflows/python-app.yml)
 
